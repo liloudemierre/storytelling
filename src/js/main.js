@@ -26,19 +26,19 @@ const tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".tourists",
     start: "top top",
-    end: "bottom+=500% top",
+    end: "bottom+=800% top",
     pin: true,
-    scrub: true,
+    scrub: 2,
     markers: false,
   },
 });
 
 tl2
   .to(".tourists-text", { ease: "sine.inOut", opacity: "100", duration: "3" })
-  .to(".grass-right", { x: "-70%", duration: "3" })
-  .to(".grass-left", { x: "70%", duration: "3" }, "-=3")
-  .to(".tourists-right", { x: "-70%", duration: "3" }, "-=3")
-  .to(".tourists-left", { x: "70%", duration: "3" }, "-=3")
+  .to(".grass-right", { x: "-100%", duration: "3" })
+  .to(".grass-left", { x: "100%", duration: "3" }, "-=3")
+  .to(".tourists-right", { x: "-110%", duration: "3" }, "-=3")
+  .to(".tourists-left", { x: "120%", duration: "3" }, "-=3")
   .to(".tourists-text", { duration: 2, ease: "sine.inOut", opacity: "0" })
-  .to(".grass-right, .vacancier-right", { x: "70%", duration: "1" })
-  .to(".grass-left, .vacancier-left", { x: "-70%" }, "-=1");
+  .to(".grass-right, .tourists-right", { x: "110%", duration: "2" })
+  .to(".grass-left, .tourists-left", { x: "-120%" }, "-=2");

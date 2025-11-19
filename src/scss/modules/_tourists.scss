@@ -10,37 +10,25 @@
 }
 
 .grass-right {
-  width: 70%;
-  height: 25%;
-  background-color: green;
-  right: -70%;
+  right: -75%;
   bottom: 0;
   z-index: 6;
   position: absolute;
 }
 .grass-left {
-  width: 70%;
-  height: 25%;
-  background-color: green;
-  left: -70%;
+  left: -90%;
   bottom: 0;
-  z-index: 6;
+  z-index: 5;
   position: absolute;
 }
 
 .tourists-right {
-  width: 50%;
-  height: 25%;
-  background-color: pink;
   right: -50%;
   bottom: 20%;
   z-index: 5;
   position: absolute;
 }
 .tourists-left {
-  width: 50%;
-  height: 25%;
-  background-color: pink;
   left: -50%;
   bottom: 20%;
   z-index: 5;
