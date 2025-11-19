@@ -24,3 +24,16 @@ video {
   font-family: BornLosersSans;
   font-size: 96px;
 }
+
+.sequence {
+  display: none;
+}
+
+.sequence-2 {
+  background-color: black;
+  display: none;
+}
+
+.sequence.visible {
+  display: block;
+}

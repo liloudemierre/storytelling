@@ -1,0 +1,43 @@
+.castle-image {
+  bottom: -70%;
+  right: 0;
+  z-index: 8;
+  position: absolute;
+}
+
+.castle-phrase {
+  bottom: -35%;
+  left: 0%;
+  z-index: 9;
+  position: absolute;
+}
+
+.castle-text {
+  font-family: "SatoshiRegular", sans-serif;
+  color: #cd0c7a;
+  font-size: 36px;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  z-index: 7;
+  opacity: 0;
+}
+
+.video-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+}
+
+.container.video {
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.video.video-visible {
+  opacity: 1;
+}
