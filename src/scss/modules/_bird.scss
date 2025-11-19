@@ -1,0 +1,40 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+.title {
+  position: absolute;
+  color: #cd0c7a;
+  font-size: 150px;
+  font-family: "BornLosersSans", sans-serif;
+  top: 37%;
+  left: 27%;
+  z-index: 1;
+}
+.bird-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.beach-image {
+  bottom: -80%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.beach-text {
+  font-family: "SatoshiRegular", sans-serif;
+  position: absolute;
+  top: 60%;
+  left: 65%;
+  z-index: 4;
+  color: #cd0c7a;
+  font-size: 45;
+  opacity: 0;
+}
