@@ -121,7 +121,10 @@ video.addEventListener("ended", () => {
       transformOrigin: "center center",
       duration: 5,
     })
-    .to(".issue", {
-      opacity: "0",
+    .to(".issue-image", { opacity: "0" })
+    .to(".horizontal", {
+      opacity: "100",
+      ease: "sine.inOut",
+      duration: "2",
     });
 });
