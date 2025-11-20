@@ -1,0 +1,29 @@
+.faces {
+  position: relative;
+  z-index: 13;
+}
+
+.face-bottom {
+  position: absolute;
+  bottom: 0;
+  right: -20%;
+  height: 60%;
+}
+
+.face-top {
+  position: absolute;
+  left: -20;
+  height: 60%;
+}
+
+.faces-text {
+  font-family: "SatoshiRegular", sans-serif;
+  color: #cd0c7a;
+  font-size: 36px;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  z-index: 14;
+  opacity: 0;
+  width: 200%;
+}

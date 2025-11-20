@@ -23,21 +23,42 @@
   opacity: 0;
 }
 
-.video-image {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  z-index: 10;
-  position: absolute;
-}
+// .video-image {
+//   display: block;
+//   margin: 0 auto;
+//   width: 100%;
+//   z-index: 10;
+//   position: absolute;
+// }
 
+// .container.video {
+//   position: fixed;
+//   inset: 0;
+//   opacity: 0;
+//   pointer-events: none;
+// }
+
+// .video.video-visible {
+//   opacity: 1;
+// }
 .container.video {
   position: fixed;
   inset: 0;
+  width: 100vw;
+  height: 100vh;
   opacity: 0;
   pointer-events: none;
+  z-index: 9999; /* tout au-dessus */
 }
 
-.video.video-visible {
+.container.video.video-visible {
   opacity: 1;
+  pointer-events: auto;
+  z-index: 9999;
+}
+
+#Video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
