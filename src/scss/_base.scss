@@ -7,7 +7,9 @@
 a {
   color: inherit;
 }
-
+body {
+  isolation: isolate;
+}
 img,
 video {
   display: block;
@@ -36,44 +38,4 @@ video {
 
 .sequence.visible {
   display: block;
-}
-
-button {
-  border: none;
-  position: fixed;
-  top: 7%;
-  left: 4%;
-  z-index: 1000; /* toujours au-dessus */
-  padding: 0;
-  background: none;
-  cursor: pointer;
-}
-
-button img {
-  position: absolute;
-  inset: 0;
-  transition: opacity 0.3s ease;
-}
-
-button .btn-hover {
-  opacity: 0;
-}
-
-button:hover .btn-default {
-  opacity: 0;
-}
-
-button:hover .btn-hover {
-  opacity: 1;
-}
-.fixed-button-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  pointer-events: none; /* le conteneur ne bloque pas le hover, le bouton oui */
-}
-
-.fixed-button-container button {
-  pointer-events: auto;
 }

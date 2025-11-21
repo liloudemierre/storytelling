@@ -1,0 +1,45 @@
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* Hover : fond → #CD0C7A et texte → #FFF */
+button.white:hover svg path[fill="white"] {
+  fill: #cd0c7a;
+  transition: all 0.3s ease;
+}
+
+button:hover svg path[fill="black"] {
+  fill: #fff;
+  transition: all 0.3s ease;
+}
+button.black:hover svg path[fill="black"] {
+  fill: #cd0c7a;
+  transition: all 0.3s ease;
+}
+
+.btn.white {
+  top: 7%;
+  left: 4%;
+  display: none;
+  position: fixed;
+}
+
+.btn.black {
+  top: 7%;
+  left: 4%;
+  display: none;
+  position: fixed;
+}
+
+.btn.white.visible {
+  position: fixed;
+  display: block;
+  z-index: 18000;
+}
+
+.btn.black.visible {
+  position: fixed;
+  display: block;
+  z-index: 19000;
+}

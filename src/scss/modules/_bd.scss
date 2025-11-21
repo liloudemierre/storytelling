@@ -51,5 +51,9 @@
   margin-top: 5%;
 }
 .bd-button {
-  margin-top: 13%;
+  margin-top: 7%;
+}
+button.bd-button:hover svg path[fill="black"] {
+  fill: #cd0c7a;
+  transition: all 0.3s ease;
 }
