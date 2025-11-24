@@ -319,8 +319,9 @@ tl6
   )
   .to(".face-top", { y: "-100%", x: "-20%", duration: 1.5 }, "+=0.5")
   .to(".face-bottom", { y: "100%", x: "20%", duration: 1.5 }, "<")
-  .to(".faces-text", { opacity: 1, duration: 3 })
+  .to(".faces-text", { opacity: 1, duration: 3 }, "-=2")
   .to(".faces-text", { opacity: 0, duration: 1 })
+  .to(".black", { opacity: 0, duration: 1 })
   .to(".bd-cover", { x: "220%" })
   .to(
     ".bd-text > div",
